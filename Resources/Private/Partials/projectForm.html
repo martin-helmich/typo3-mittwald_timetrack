@@ -1,0 +1,41 @@
+{namespace mwt=Tx_MittwaldTimetrack_ViewHelpers}
+
+<f:form object="{project}" name="project" action="{action}">
+
+	<f:form.errors for="project">
+		<div style="background-color: #fdd; padding: 12px;">
+			<f:for each="{error.errors}" as="fieldError">
+				<f:translate key="Project_Error_{error.propertyName}_{fieldError.code}" default="Project_Error_{error.propertyName}_{fieldError.code}" />
+			</f:for>
+		</div>
+	</f:form.errors>
+
+	<table>
+		<tr>
+			<td><label for="project"><f:translate key="Project_Form_Parent" /></label></td>
+			<td>
+				<f:form.select property="project" options="{projects}" optionLabelField="name" />
+			</td>
+		</tr><tr>
+			<td><label for="name"><f:translate key="Project_Form_Name" /></label></td>
+			<td>
+				<f:form.textbox property="name" />
+			</td>
+		</tr><tr>
+			<td><f:translate key="Project_Form_Members" /></td>
+			<td>
+				<table>
+					<f:for each="{users}" as="user">
+						<tr>
+							<td>{user.name}</td>
+							<td>
+								<mwt:form.userRole name="assignments" project="{project}" user="{user}" options="{roles}" />
+							</td>
+						</tr>
+					</f:for>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<f:form.submit value="{f:translate(key:'Project_Form_Save')}" />
+</f:form>

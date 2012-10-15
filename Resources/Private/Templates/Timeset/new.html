@@ -1,0 +1,46 @@
+<f:layout name="main" />
+
+<f:section name="title">
+	<f:translate key="Timeset_New_Title" arguments="{0: project.name}" />
+</f:section>
+
+<f:section name="menu" />
+
+<f:section name="content">
+	<f:form object="{timeset}" action="create" name="timeset">
+
+		<f:form.errors for="timeset">
+			<div style="background-color: #fdd; padding: 12px;">
+				<f:if condition="{error.errors}"><f:then>
+					<f:for each="{error.errors}" as="fieldError">
+						<div><f:translate key="Timeset_Error_{error.propertyName}_{fieldError.code}" default="{error.propertyName}_{fieldError.code}" /></div>
+					</f:for>
+				</f:then><f:else>
+					<div><f:translate key="Timeset_Error_{error.code}" default="{error.code}" /></div>
+				</f:else></f:if>
+			</div>
+		</f:form.errors>
+
+		<table>
+			<tr>
+				<td><f:translate key="Timeset_New_User" /></td>
+				<td>{user.name}</td>
+			</tr><tr>
+				<td><f:translate key="Timeset_New_Project" /></td>
+				<td>{project.name}</td>
+			</tr><tr>
+				<td><f:translate key="Timeset_New_Starttime" /></td>
+				<td><f:form.textbox property="starttime" id="start" /></td>
+			</tr><tr>
+				<td><f:translate key="Timeset_New_Stoptime" /></td>
+				<td><f:form.textbox property="stoptime" id="end" /></td>
+			</tr><tr>
+				<td><f:translate key="Timeset_New_Comment" /></td>
+				<td><f:form.textarea property="comment" rows="5" cols="80" /></td>
+			</tr>
+		</table>
+
+		<f:form.submit value="{f:translate(key:'Timeset_New_Save')}" />
+		<f:form.hidden name="project" value="{project}" />
+	</f:form>
+</f:section>

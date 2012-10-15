@@ -1,0 +1,18 @@
+<f:be.container pageTitle="Timetracking">
+
+	<div style="float:right">
+		<f:be.menus.actionMenu>
+			<f:be.menus.actionMenuItem label="Overview" controller="Backend" action="index" />
+			<f:be.menus.actionMenuItem label="Aktion Eins" controller="Backend" action="action1" />
+			<f:be.menus.actionMenuItem label="Aktion Zwei" controller="Backend" action="action2" />
+		</f:be.menus.actionMenu>
+	</div>
+	<div>
+		<f:be.pageInfo /> - 
+		<f:be.pagePath />
+	</div>
+
+	<h1>Projekte</h1>
+
+	<f:be.tableList tableName="tx_mittwaldtimetrack_domain_model_project" fieldList="{0: 'name', 1: 'parent'}" storagePid="16" levels="2" recordsPerPage="10" sortField="name" sortDescending="true" readOnly="true" enableClickMenu="false" clickTitleMode="info" alternateBackgroundColors="true" />
+</f:be.container>

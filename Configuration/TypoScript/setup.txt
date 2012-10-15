@@ -1,0 +1,24 @@
+plugin.tx_mittwaldtimetrack.settings {
+}
+
+plugin.tx_mittwaldtimetrack._CSS_DEFAULT_STYLE (
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-mittwaldtimetrack-pi1 table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-mittwaldtimetrack-pi1 table th {
+		font-weight:bold;
+	}
+
+	.tx-mittwaldtimetrack-pi1 table td {
+		vertical-align:top;
+	}
+)
+
+page.includeCSS.mittwald_timetrack = EXT:mittwald_timetrack/Resources/Public/Stylesheets/styles.css

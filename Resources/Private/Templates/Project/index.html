@@ -1,0 +1,15 @@
+<f:layout name="main" />
+
+<f:section name="title">
+	<f:translate key="Project_Index_Title">Projekte</f:translate>
+</f:section>
+
+<f:section name="menu">
+	<ul>
+		<li><f:link.action action="new"><f:translate key="Project_Index_Action_New" /></f:link.action></li>
+	</ul>
+</f:section>
+
+<f:section name="content">
+	<f:render partial="projectList" arguments="{projects : projects}" />
+</f:section>

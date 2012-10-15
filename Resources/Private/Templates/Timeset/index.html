@@ -1,0 +1,36 @@
+{namespace mwt=Tx_MittwaldTimetrack_ViewHelpers}
+
+<f:layout name="main" />
+
+	<!-- TITLE -->
+<f:section name="title">
+	<f:translate key="Timeset_Index_Title" arguments="{0: project.name}" />
+</f:section>
+
+	<!-- MENU -->
+<f:section name="menu">
+	<ul>
+		<li><f:link.action controller="Project" action="show" arguments="{project : project}"><f:translate key="Timeset_Index_Action_Back" /></f:link.action></li>
+	</ul>
+</f:section>
+
+<f:section name="content">
+	<table>
+		<tr>
+			<th><f:translate key="Timeset_Index_List_Member" /></th>
+			<th><f:translate key="Timeset_Index_List_Start" /></th>
+			<th><f:translate key="Timeset_Index_List_Stop" /></th>
+			<th><f:translate key="Timeset_Index_List_Diff" /></th>
+			<th><f:translate key="Timeset_Index_List_Comment" /></th>
+		</tr>
+		<f:for each="{timesets}" as="timeset">
+			<tr>
+				<td>{timeset.assignment.user.name} ({timeset.assignment.role.name})</td>
+				<td><f:format.date format="d. m. Y, H:i">{timeset.starttime}</f:format.date></td>
+				<td><f:format.date format="d. m. Y, H:i">{timeset.stoptime}</f:format.date></td>
+				<td><mwt:timeFormat amount="{timeset.workedTime}" /></td>
+				<td>{timeset.comment}</td>
+			</tr>
+		</f:for>
+	</table>
+</f:section>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'mittwald_timetrack'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_mittwaldtimetrack_domain_model_project">Project</label>
+			<label index="tx_mittwaldtimetrack_domain_model_project.name">Name</label>
+			<label index="tx_mittwaldtimetrack_domain_model_project.start">Start</label>
+			<label index="tx_mittwaldtimetrack_domain_model_project.end">End</label>
+			<label index="tx_mittwaldtimetrack_domain_model_project.assignments">Assignments</label>
+			<label index="tx_mittwaldtimetrack_domain_model_project.children">Children</label>
+			<label index="tx_mittwaldtimetrack_domain_model_role">Role</label>
+			<label index="tx_mittwaldtimetrack_domain_model_role.name">Name</label>
+			<label index="tx_mittwaldtimetrack_domain_model_assignment">Assignment</label>
+			<label index="tx_mittwaldtimetrack_domain_model_assignment.role">Role</label>
+			<label index="tx_mittwaldtimetrack_domain_model_assignment.timesets">Timesets</label>
+			<label index="tx_mittwaldtimetrack_domain_model_timeset">Timeset</label>
+			<label index="tx_mittwaldtimetrack_domain_model_timeset.tx_mittwaldtimetrack_starttime">Starttime</label>
+			<label index="tx_mittwaldtimetrack_domain_model_timeset.stoptime">Stoptime</label>
+			<label index="tx_mittwaldtimetrack_domain_model_timeset.comment">Comment</label>
+		</languageKey>
+	</data>
+</T3locallang>

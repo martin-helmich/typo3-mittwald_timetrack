@@ -1,0 +1,73 @@
+/*
+
+	Styles for the mittwald_timetrack extension.
+
+    $Id: styles.css 17 2010-03-03 09:26:45Z helmich $
+*/
+
+#mittwaldtimetrack-menu ul {
+	margin: 8px 0px;
+	padding: 0px;
+}
+
+#mittwaldtimetrack-menu ul li {
+	list-style-type: none;
+	float: left;
+	font-size: 10pt;
+	background-color: #ccf;
+	padding: 4px 8px;
+	margin: 4px;
+}
+
+#mittwaldtimetrack-menu ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
+#mittwaldtimetrack-content {
+	clear: both;
+}
+
+h2#mittwaldtimetrack-title {
+	color: #234479;
+	font-family: Sawasdee, Arial, sans-serif;
+	border-bottom: 2px solid #234479;
+}
+
+#mittwaldtimetrack-content h3 {
+	color: #234479;
+	font-family: Sawasdee, Arial, sans-serif;
+	border-bottom: 1px solid #234479;
+	font-size: 12pt;
+}
+
+#mittwaldtimetrack-content table {
+	border-spacing: 0px;
+}
+
+#mittwaldtimetrack-content th {
+	background-color: #ccf;
+	font-family: Sawasdee, Arial, sans-serif;
+	text-align: left;
+	border-bottom: 2px solid #234479;
+	padding: 4px 8px;
+	font-size: 11pt;
+}
+
+#mittwaldtimetrack-content td {
+	padding: 4px 8px;
+	font-size: 10pt;
+}
+
+#mittwaldtimetrack-footer {
+	font-size: 9pt;
+	color: #808080;
+	text-align: center;
+	margin: 16px;
+}
+
+.mittwaldtimetrack-exception {
+	background-color: #fdd;
+	font-size: 10pt;
+	padding: 12px;
+}

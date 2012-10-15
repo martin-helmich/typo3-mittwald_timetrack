@@ -1,0 +1,20 @@
+{namespace mwt=Tx_MittwaldTimetrack_ViewHelpers}
+
+<f:if condition="{projects}">
+	<table>
+		<thead>
+			<tr>
+				<th><f:translate key="Project_Index_Name" /></th>
+				<th><f:translate key="Project_Index_Members" /></th>
+				<th><f:translate key="Project_Index_WorkedTime" /></th>
+			</tr>
+		</thead>
+		<f:for each="{projects}" as="project">
+			<tr>
+				<td><f:link.action action="show" arguments="{ project : project }">{project.name}</f:link.action></td>
+				<td><f:count subject="{project.assignments}" /> <f:translate key="Project_Index_Members_Unit" /></td>
+				<td><mwt:timeFormat amount="{project.workedTime}" /></td>
+			</tr>
+		</f:for>
+	</table>
+</f:if>

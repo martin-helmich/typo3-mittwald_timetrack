@@ -1,0 +1,53 @@
+{namespace mwt=Tx_MittwaldTimetrack_ViewHelpers}
+
+<f:layout name="main" />
+
+	<!-- TITLE -->
+<f:section name="title">
+	<f:translate key="Project_Show_Title" arguments="{0: project.name}" />
+</f:section>
+
+	<!-- MENU -->
+<f:section name="menu">
+	<ul>
+		<li><f:link.action action="index"><f:translate key="Project_Show_Action_Back" /></f:link.action></li>
+		<li><f:link.action action="edit" arguments="{project : project}"><f:translate key="Project_Show_Action_Edit" /></f:link.action></li>
+		<li><f:link.action action="delete" arguments="{project : project}"><f:translate key="Project_Show_Action_Delete" /></f:link.action></li>
+		<li><f:link.action action="new" controller="Timeset" arguments="{project : project}"><f:translate key="Project_Show_Action_NewTimeset" /></f:link.action></li>
+		<li><f:link.action action="index" controller="Timeset" arguments="{project : project}"><f:translate key="Project_Show_Action_ListTimesets" /></f:link.action></li>
+	</ul>
+</f:section>
+
+<f:section name="content">
+		<!-- PROJECT INFO -->
+	<table>
+		<tr>
+			<td><f:translate key="Project_Show_StartDate" /></td><td><f:format.date format="d. m. Y">{project.start}</f:format.date></td>
+		</tr><tr>
+			<td><f:translate key="Project_Show_EndDate" /></td><td><f:format.date format="d. m. Y">{project.end}</f:format.date></td>
+		</tr>
+	</table>
+
+		<!-- SUB PROJECTS -->
+	<f:if condition="{project.children}">
+		<h3><f:translate key="Project_Show_Children" /></h3>
+		<f:render partial="projectList" arguments="{projects : project.children}" />
+	</f:if>
+
+		<!-- MEMBERS -->
+	<h3><f:translate key="Project_Show_Members" /></h3>
+	<table>
+		<tr>
+			<th><f:translate key="Project_Show_Members_Name" /></th>
+			<th><f:translate key="Project_Show_Members_Role" /></th>
+			<th><f:translate key="Project_Show_Members_WorkedTime" /></th>
+		</tr>
+		<f:for each="{project.assignments}" as="assignment">
+			<tr>
+				<td>{assignment.user.name}</td>
+				<td>{assignment.role.name}</td>
+				<td><mwt:timeFormat amount="{assignment.workedTime}" /></td>
+			</tr>
+		</f:for>
+	</table>
+</f:section>

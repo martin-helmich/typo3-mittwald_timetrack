@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the blog_example extension</description>
+	</meta>
+	<data type="array">
+
+
+
+			<!--  ENGLISH LANGUAGE DATA -->
+
+		<languageKey index="default" type="array">
+
+				<!-- PROJECT: INDEX ACTION -->
+			<label index="Project_Index_Title">Projects</label>
+			<label index="Project_Index_Name">Project name</label>
+			<label index="Project_Index_Members">Members</label>
+			<label index="Project_Index_Members_Unit">Members</label>
+			<label index="Project_Index_WorkedTime">Worked time</label>
+			<label index="Project_Index_Action_New">New project</label>
+
+				<!-- PROJECT: SHOW ACTION -->
+			<label index="Project_Show_Title">Project details: %s</label>
+			<label index="Project_Show_Action_Back">Back</label>
+			<label index="Project_Show_Action_Edit">Edit</label>
+			<label index="Project_Show_Action_Delete">Delete</label>
+			<label index="Project_Show_Action_NewTimeset">New timeset</label>
+			<label index="Project_Show_Action_ListTimesets">List all timesets</label>
+			<label index="Project_Show_StartDate">Start date</label>
+			<label index="Project_Show_EndDate">End date</label>
+			<label index="Project_Show_Children">Sub-Projects</label>
+			<label index="Project_Show_Members">Members</label>
+			<label index="Project_Show_Members_Name">Member name</label>
+			<label index="Project_Show_Members_Role">Role</label>
+			<label index="Project_Show_Members_WorkedTime">Worked time</label>
+
+				<!-- PROJECT: NEW/EDIT ACTIONS -->
+			<label index="Project_Edit_Title">Edit project: %s</label>
+			<label index="Project_New_Title">New project</label>
+			<label index="Project_Form_Parent">Parent project</label>
+			<label index="Project_Form_Name">Name</label>
+			<label index="Project_Form_Members">Members</label>
+			<label index="Project_Form_Save">Save</label>
+			
+				<!-- PROJECT ERRORS -->
+			<label index="Project_Error_name_1238108067">The minimum length for the project name is 3 characters.</label>
+
+				<!-- TIMESET: INDEX ACTION -->
+			<label index="Timeset_Index_Title">List timesets: %s</label>
+			<label index="Timeset_Index_Action_Back">Back</label>
+			<label index="Timeset_Index_List_Member">User</label>
+			<label index="Timeset_Index_List_Start">Start time</label>
+			<label index="Timeset_Index_List_Stop">Stop time</label>
+			<label index="Timeset_Index_List_Diff">Worked time</label>
+			<label index="Timeset_Index_List_Comment">Comment</label>
+
+				<!-- TIMESET: NEW ACTION -->
+			<label index="Timeset_New_Title">New timeset: %s</label>
+			<label index="Timeset_New_User">User</label>
+			<label index="Timeset_New_Project">Project</label>
+			<label index="Timeset_New_Starttime">Start time</label>
+			<label index="Timeset_New_Stoptime">Stop time</label>
+			<label index="Timeset_New_Comment">Comment</label>
+			<label index="Timeset_New_Save">Save</label>
+			
+				<!-- TIMESET ERRORS -->
+			<label index="Timeset_Error_comment_1221560718">Please specify a comment for this timeset.</label>
+			<label index="Timeset_Error_1265721025">The stop time needs to be after the start time.</label>
+
+				<!-- VIEWHELPERS: TIME UNITS -->
+			<label index="ViewHelper_Unit_Hours">hours</label>
+			<label index="ViewHelper_Unit_Minutes">minutes</label>
+			<label index="ViewHelper_Unit_Days">days</label>
+			<label index="ViewHelper_Unit_Seconds">seconds</label>
+
+				<!-- GENERAL ERRORS -->
+			<label index="Error_Title">Error</label>
+			<label index="Error_Subtitle">Error #%d</label>
+			<label index="Error_1266412844">You have to be member of a project to create timesets!</label>
+		</languageKey>
+
+
+
+			<!--  GERMAN LANGUAGE DATA -->
+
+		<languageKey index="de" type="array">
+
+				<!-- PROJECT: INDEX ACTION -->
+			<label index="Project_Index_Title">Projekte</label>
+			<label index="Project_Index_Name">Projektname</label>
+			<label index="Project_Index_Members">Mitglieder</label>
+			<label index="Project_Index_Members_Unit">Mitglieder</label>
+			<label index="Project_Index_WorkedTime">Aufgewendete Zeit</label>
+			<label index="Project_Index_Action_New">Neues Projekt</label>
+
+				<!-- PROJECT: SHOW ACTION -->
+			<label index="Project_Show_Title">Projektdetails: %s</label>
+			<label index="Project_Show_Action_Back">Zurück</label>
+			<label index="Project_Show_Action_Edit">Bearbeiten</label>
+			<label index="Project_Show_Action_Delete">Löschen</label>
+			<label index="Project_Show_Action_NewTimeset">Neue Zeitbuchung</label>
+			<label index="Project_Show_Action_ListTimesets">Zeitbuchungen anzeigen</label>
+			<label index="Project_Show_StartDate">Startdatum</label>
+			<label index="Project_Show_EndDate">Endatum</label>
+			<label index="Project_Show_Children">Unterprojekte</label>
+			<label index="Project_Show_Members">Mitglieder</label>
+			<label index="Project_Show_Members_Name">Mitarbeitername</label>
+			<label index="Project_Show_Members_Role">Rolle</label>
+			<label index="Project_Show_Members_WorkedTime">Aufgewendete Zeit</label>
+
+				<!-- PROJECT: NEW/EDIT ACTIONS -->
+			<label index="Project_Edit_Title">Projekt bearbeiten: %s</label>
+			<label index="Project_New_Title">Neues Projekt</label>
+			<label index="Project_Form_Parent">Übergeordnetes Projekt</label>
+			<label index="Project_Form_Name">Name</label>
+			<label index="Project_Form_Members">Mitglieder</label>
+			<label index="Project_Form_Save">Speichern</label>
+
+				<!-- PROJECT ERRORS -->
+			<label index="Project_Error_name_1238108067">Der Projektname muss mindestens 3 Zeichen lang sein.</label>
+
+				<!-- TIMESET: INDEX ACTION -->
+			<label index="Timeset_Index_Title">Zeitpaare anzeigen: %s</label>
+			<label index="Timeset_Index_Action_Back">Zurück</label>
+			<label index="Timeset_Index_List_Member">Benutzer</label>
+			<label index="Timeset_Index_List_Start">Startzeit</label>
+			<label index="Timeset_Index_List_Stop">Stoppzeit</label>
+			<label index="Timeset_Index_List_Diff">Aufgewendete Zeit</label>
+			<label index="Timeset_Index_List_Comment">Kommentar</label>
+
+				<!-- TIMESET: NEW ACTION -->
+			<label index="Timeset_New_Title">Neues Zeitpaar: %s</label>
+			<label index="Timeset_New_User">Benutzer</label>
+			<label index="Timeset_New_Project">Projekt</label>
+			<label index="Timeset_New_Starttime">Startzeit</label>
+			<label index="Timeset_New_Stoptime">Stoppzeit</label>
+			<label index="Timeset_New_Comment">Kommentar</label>
+			<label index="Timeset_New_Save">Speichern</label>
+
+				<!-- TIMESET ERRORS -->
+			<label index="Timeset_Error_comment_1221560718">Bitte geben Sie einen Kommentar für dieses Zeitpaar an.</label>
+			<label index="Timeset_Error_1265721025">Die Stoppzeit muss hinter der Startzeit liegen.</label>
+
+				<!-- VIEWHELPERS: TIME UNITS -->
+			<label index="ViewHelper_Unit_Hours">Stunden</label>
+			<label index="ViewHelper_Unit_Minutes">Minuten</label>
+			<label index="ViewHelper_Unit_Days">Tage</label>
+			<label index="ViewHelper_Unit_Seconds">Sekunden</label>
+
+				<!-- GENERAL ERRORS -->
+			<label index="Error_Title">Fehler</label>
+			<label index="Error_Subtitle">Fehler #%d</label>
+			<label index="Error_1266412844">Sie müssen Mitglied in einem Projekt sein, um Zeiten buchen zu können!</label>
+		</languageKey>
+	</data>
+</T3locallang>
